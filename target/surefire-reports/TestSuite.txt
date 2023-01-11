@@ -1,15 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 77.66 s <<< FAILURE! - in TestSuite
-jsAlertTest(com.herokuapp.theinternet.alertstests.AlertsTests)  Time elapsed: 3.662 s  <<< FAILURE!
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 69.669 s <<< FAILURE! - in TestSuite
+jsAlertTest(com.herokuapp.theinternet.alertstests.AlertsTests)  Time elapsed: 3.485 s  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	result is not expected. 
 Should be 'You successfuly clicked an alert', but it is 'You successfully clicked an alert' expected [true] but found [false]
 	at com.herokuapp.theinternet.alertstests.AlertsTests.jsAlertTest(AlertsTests.java:44)
 
-jsPromptTest(com.herokuapp.theinternet.alertstests.AlertsTests)  Time elapsed: 5.347 s  <<< FAILURE!
+jsPromptTest(com.herokuapp.theinternet.alertstests.AlertsTests)  Time elapsed: 4.539 s  <<< FAILURE!
 java.lang.AssertionError: 
 The following asserts failed:
 	Alert message is not expected. 
