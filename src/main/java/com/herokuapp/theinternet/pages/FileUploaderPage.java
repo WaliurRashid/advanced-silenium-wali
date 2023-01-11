@@ -4,6 +4,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.io.File;
+
 public class FileUploaderPage extends BasePageObject {
 
 	private String pageUrl = "http://the-internet.herokuapp.com/upload";
@@ -34,7 +36,9 @@ public class FileUploaderPage extends BasePageObject {
 		log.info("Selecting '" + fileName + "' file from Files folder");
 		// Selecting file
 		// String filePath = "C:\\Users\\Dmitry\\Downloads\\some-file.txt";
-		String filePath = System.getProperty("user.dir") + "//src//main//resources//files//" + fileName;
+//		String filePath = System.getProperty("user.dir") + "//src//main//resources//files//" + fileName;
+		String resource = File.separator + "src"+ File.separator + "main" + File.separator + "resources" + File.separator + "files" + File.separator;
+		String filePath = System.getProperty("user.dir") + resource + fileName;
 		type(filePath, choseFileFieldLocator);
 		log.info("File selected");
 	}
